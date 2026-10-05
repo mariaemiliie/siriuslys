@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sirius</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <!-- Hver side viser sin halvdel av det samme lokale panoramabildet. -->
+    <main class="scene scene-start">
+        <img class="panorama" src="bilder/sirius-panorama.png"
+             alt="Stjernebildet Store hund med Sirius over et mørkt fjellandskap. En gyllen lysstrøm leder mot høyre.">
+
+        <!-- Flexbox plasserer den ekte HTML-teksten og navigasjonslenken. -->
+        <section class="innhold" aria-labelledby="overskrift">
+            <h1 id="overskrift">I lyset av Sirius..</h1>
+            <nav aria-label="Gå videre i fortellingen">
+                <a class="reise-lenke" href="main.html">Følg lyset <span aria-hidden="true">→</span></a>
+            </nav>
+        </section>
+
+        <!-- Den ytre boksen beveger seg. Stjernen inni pulserer uavhengig. -->
+        <div class="sirius sirius-start" aria-hidden="true">
+            <span class="stjerne">
+                <span class="strale strale-vannrett"></span>
+                <span class="strale strale-loddrett"></span>
+            </span>
+        </div>
+    </main>
+
+    <footer class="bunntekst">
+        <p>Maria Aasene · PRO105</p>
+    </footer>
+</body>
+</html>
